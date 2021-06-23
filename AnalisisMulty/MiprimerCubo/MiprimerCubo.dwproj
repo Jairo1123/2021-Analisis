@@ -6,10 +6,67 @@
     <Name>MiprimerCubo.database</Name>
     <FullPath>MiprimerCubo.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Nort W.cube</Name>
+      <FullPath>Nort W.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Nort W.partitions</Name>
+          <FullPath>Nort W.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Products.dim</Name>
+      <FullPath>Dim Products.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Orders.dim</Name>
+      <FullPath>Fact Orders.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customers.dim</Name>
+      <FullPath>Dim Customers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Employees.dim</Name>
+      <FullPath>Dim Employees.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Nort W.ds</Name>
+      <FullPath>Nort W.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Nort W.dsv</Name>
+      <FullPath>Nort W.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Nort W</Id>
+            <Name>Nort W</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=(local);Integrated Security=SSPI;Initial Catalog=NortW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Nort W</Id>
+            <Name>Nort W</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
