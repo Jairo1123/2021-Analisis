@@ -19,56 +19,56 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>vZDSM+3Wg9k4ckAX0CD4IhePtv0=6/23/2021 2:22:58 PM6/23/2021 2:22:58 PM</TimeStamp>
+        <TimeStamp>vZDSM+3Wg9k4ckAX0CD4IhePtv0=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Nort W</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>PiAp7UvyEbROuI8X8gXFyOubM7Y=7/1/2021 1:43:16 PM6/23/2021 2:25:50 PM</TimeStamp>
+        <TimeStamp>PiAp7UvyEbROuI8X8gXFyOubM7Y=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Nort W</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>+IvaxEJijZcPQI6UO305irxWbAA=7/1/2021 1:54:53 PM6/23/2021 2:49:39 PM</TimeStamp>
+        <TimeStamp>+IvaxEJijZcPQI6UO305irxWbAA=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Dim Products</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>q7hImQqEZInXQ2/ZaPDcpchNouo=7/1/2021 2:07:40 PM6/23/2021 2:49:39 PM</TimeStamp>
+        <TimeStamp>q7hImQqEZInXQ2/ZaPDcpchNouo=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Fact Orders</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>oVlLa5mIGGa+wz7DgfVcgeD8MJc=7/1/2021 1:57:39 PM6/23/2021 2:49:40 PM</TimeStamp>
+        <TimeStamp>oVlLa5mIGGa+wz7DgfVcgeD8MJc=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Dim Customers</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jyISdLq9kxXy7unsXFr6eETr8KI=7/1/2021 2:05:12 PM6/23/2021 2:49:40 PM</TimeStamp>
+        <TimeStamp>jXxEYYGtCokUNw1zdM37hcLB+Hw=7/20/2021 5:47:18 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Dim Employees</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>vAl0ZF1Fb6hO+yDE7kQbp0VXhpw=7/14/2021 1:30:54 PM7/14/2021 1:30:53 PM</TimeStamp>
+        <TimeStamp>vAl0ZF1Fb6hO+yDE7kQbp0VXhpw=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>DimOrderDate</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>7nk+eQMNsndz0ixBI7m1j7OtU9U=7/14/2021 1:34:49 PM6/23/2021 2:49:39 PMtfTW0N3iIny1PMU40m/9fSREOhY=6/23/2021 2:49:40 PM6/23/2021 2:49:39 PM</TimeStamp>
+        <TimeStamp>7nk+eQMNsndz0ixBI7m1j7OtU9U=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PMtfTW0N3iIny1PMU40m/9fSREOhY=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
         <ID>
           <String>Nort W</String>
         </ID>
@@ -76,7 +76,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>5oWFguytnPkmqLliBXRutzOHu5A=6/23/2021 1:23:21 PM6/23/2021 1:23:19 PM</TimeStamp>
+      <TimeStamp>5oWFguytnPkmqLliBXRutzOHu5A=7/19/2021 1:33:46 PM7/19/2021 1:33:46 PM</TimeStamp>
       <ID>
         <String>MiprimerCubo</String>
       </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-07-15T21:53:27.673333Z</LastDeployed>
+  <LastDeployed>2021-07-20T23:47:25.906667Z</LastDeployed>
 </DeploymentSnapshot>
