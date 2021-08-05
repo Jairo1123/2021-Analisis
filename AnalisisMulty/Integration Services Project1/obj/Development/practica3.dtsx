@@ -11,11 +11,47 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{50930A0E-EBB3-4F1F-BF7A-83D992BF9642}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{7FD70F1E-C7E5-4707-8444-61A357104B3A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DDEFE493-FB7F-4772-87E7-B9B3306618ED}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Cantidad">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C20D1DDD-7AD4-4E29-8727-87EF2FD592EB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaF">
+      <DTS:VariableValue
+        DTS:DataType="7">2/1/1998</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B2F69CEC-976E-421C-BB86-611A5F24A539}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaI">
+      <DTS:VariableValue
+        DTS:DataType="7">1/1/1998</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{782158A5-679F-4B63-90FB-A3B101FAC912}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="FechaOrden">
+      <DTS:VariableValue
+        DTS:DataType="7">1/23/2001</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{F8FE42E8-428B-4A13-A3DE-9D9E692097D3}"
@@ -36,28 +72,71 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DDEFE493-FB7F-4772-87E7-B9B3306618ED}"
+      DTS:DTSID="{0C17DFB0-E9FA-4E27-9D17-AACF24DD1598}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="Productos">
+      DTS:ObjectName="MiProducto">
       <DTS:VariableValue
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8680509A-ED63-4820-AF05-DAA7808EFB5E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="TotalP1">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{02D70829-C59B-4CB0-9780-E81ABA22BDF4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="TotalP2">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Contenedor de bucles Foreach"
+      DTS:refId="Package\Fin"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{24F2E0AA-6F8C-4B08-BCC9-E8BF73A87A4E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fin"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Procesa los Datos"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Contenedor de bucles Foreach"
       DTS:DTSID="{E736B30E-58DF-4D1B-A01A-E920EABB66F5}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Contenedor de bucles Foreach">
+      DTS:ObjectName="Procesa los Datos">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{7A696823-C690-405C-8288-C091EF780D14}"
+        DTS:ObjectName="{7A696823-C690-405C-8288-C091EF780D14}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::LaTabla" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de bucles Foreach\Tarea 1"
+          DTS:refId="Package\Procesa los Datos\Tarea 1"
           DTS:CreationName="Microsoft.ExpressionTask"
           DTS:Description="Tarea de expresión"
           DTS:DTSID="{8F1E8EBE-AAC0-4B2E-A387-7D880814FEEB}"
@@ -69,11 +148,11 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <ExpressionTask
-              Expression="" />
+              Expression="@[User::TotalP1]= @[User::TotalP1] +  @[User::Cantidad]" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de bucles Foreach\Tarea 2"
+          DTS:refId="Package\Procesa los Datos\Tarea 2"
           DTS:CreationName="Microsoft.ExpressionTask"
           DTS:Description="Tarea de expresión"
           DTS:DTSID="{f9517aad-6371-43f4-a9aa-bf406efc4a46}"
@@ -85,11 +164,11 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <ExpressionTask
-              Expression="" />
+              Expression="@[User::TotalP2]= @[User::TotalP2] +   @[User::Cantidad]" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de bucles Foreach\Tarea Flujo de datos"
+          DTS:refId="Package\Procesa los Datos\Tarea Flujo de datos"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
           DTS:DTSID="{BCDCB6B1-366D-40F4-A0F0-B9E6DF7D4F81}"
@@ -106,26 +185,46 @@
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción]"
+          DTS:refId="Package\Procesa los Datos.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
           DTS:DTSID="{CAAB043A-B140-4C76-9A59-3302C98501A8}"
           DTS:EvalOp="1"
-          DTS:Expression="@[User::Productos] &gt;50"
-          DTS:From="Package\Contenedor de bucles Foreach\Tarea Flujo de datos"
+          DTS:Expression="@[User::MiProducto]==&quot;Queso Cabrales&quot;"
+          DTS:From="Package\Procesa los Datos\Tarea Flujo de datos"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
-          DTS:To="Package\Contenedor de bucles Foreach\Tarea 1" />
+          DTS:To="Package\Procesa los Datos\Tarea 1" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción 1]"
+          DTS:refId="Package\Procesa los Datos.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
           DTS:DTSID="{DCCAD2F8-E66E-44BE-874C-6ECF928990A5}"
           DTS:EvalOp="1"
-          DTS:Expression="@[User::Productos]&lt;50"
-          DTS:From="Package\Contenedor de bucles Foreach\Tarea Flujo de datos"
+          DTS:Expression="@[User::MiProducto]==&quot;Queso Manchego La Pastora&quot;"
+          DTS:From="Package\Procesa los Datos\Tarea Flujo de datos"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
-          DTS:To="Package\Contenedor de bucles Foreach\Tarea 2" />
+          DTS:To="Package\Procesa los Datos\Tarea 2" />
       </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{9DA2237C-7EFB-4F40-82E3-A031D007BF8A}"
+          DTS:ObjectName="{9DA2237C-7EFB-4F40-82E3-A031D007BF8A}"
+          DTS:ValueIndex="2"
+          DTS:VariableName="User::MiProducto" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{722D597C-8369-4701-8C0D-C03C70589D93}"
+          DTS:ObjectName="{722D597C-8369-4701-8C0D-C03C70589D93}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::FechaOrden" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{4C33E824-1309-4579-8253-EFB7E29DF649}"
+          DTS:ObjectName="{4C33E824-1309-4579-8253-EFB7E29DF649}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Cantidad" />
+      </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Tarea Ejecutar SQL"
@@ -141,33 +240,24 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{33087B53-D2ED-4949-9187-DDFB3F4356ED}"
-          SQLTask:SqlStatementSource="declare @P2 as varchar(100)=?;&#xA;SELECT p.ProductName, ProductID&#xA;from dbo.[Products] as p&#xA;WHERE p.ProductName like '%' +@P2+ '%';"
+          SQLTask:SqlStatementSource="declare @fechaI as datetime = '19970101';&#xA;declare @fechaF as datetime = '19980101';&#xA;declare @P as varchar(100)='queso';&#xA;&#xA;SELECT Quantity,&#xA;    (Select OrderDate from dbo.Orders as q&#xA;    where OrderID = o.OrderID) as OrderDate,&#xA;    (Select ProductName From dbo.Products&#xA;    where ProductID = o.ProductID) as Producto&#xA;From dbo.[Order Details] as o &#xA;Inner JOIN dbo.[Orders] as q&#xA;on o.OrderID = q.OrderID&#xA;Inner JOIN dbo.[Products] as p&#xA;on o.ProductID = p.ProductID&#xA;WHERE q.OrderDate BETWEEN @fechaI and @fechaF and ProductName like '%' +@P+ '%'&#xA;ORDER by Quantity;"
           SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="0"
             SQLTask:DtsVariableName="User::LaTabla" />
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::Productos"
+            SQLTask:DtsVariableName="User::FechaI"
             SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
+            SQLTask:DataType="7"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::FechaF"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="7"
             SQLTask:ParameterSize="-1" />
         </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Tarea Flujo de datos"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Tarea Flujo de datos"
-      DTS:DTSID="{24F2E0AA-6F8C-4B08-BCC9-E8BF73A87A4E}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Flujo de datos"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -176,10 +266,10 @@
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{27A7A21F-40BC-4A08-9AF0-8E10E3396E9E}"
-      DTS:From="Package\Contenedor de bucles Foreach"
+      DTS:From="Package\Procesa los Datos"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Tarea Flujo de datos" />
+      DTS:To="Package\Fin" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
@@ -187,15 +277,15 @@
       DTS:From="Package\Tarea Ejecutar SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Contenedor de bucles Foreach" />
+      DTS:To="Package\Procesa los Datos" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
@@ -206,19 +296,23 @@
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="576,5" />
         <NodeLayout
+          Size="93,42"
+          Id="Package\Fin"
+          TopLeft="631,432" />
+        <NodeLayout
           Size="115,42"
-          Id="Package\Contenedor de bucles Foreach\Tarea 1"
+          Id="Package\Procesa los Datos\Tarea 1"
           TopLeft="7,94" />
         <NodeLayout
           Size="115,42"
-          Id="Package\Contenedor de bucles Foreach\Tarea 2"
+          Id="Package\Procesa los Datos\Tarea 2"
           TopLeft="441,101" />
         <NodeLayout
           Size="176,42"
-          Id="Package\Contenedor de bucles Foreach\Tarea Flujo de datos"
+          Id="Package\Procesa los Datos\Tarea Flujo de datos"
           TopLeft="199,13" />
         <EdgeLayout
-          Id="Package\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción]"
+          Id="Package\Procesa los Datos.PrecedenceConstraints[Restricción]"
           TopLeft="259,55">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -254,7 +348,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción 1]"
+          Id="Package\Procesa los Datos.PrecedenceConstraints[Restricción 1]"
           TopLeft="315,55">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -294,26 +388,22 @@
           IsExpanded="True"
           PanelSize="582,249"
           Size="582,292"
-          Id="Package\Contenedor de bucles Foreach"
+          Id="Package\Procesa los Datos"
           TopLeft="379,97" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Tarea Flujo de datos"
-          TopLeft="580,425" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="669,389">
+          TopLeft="673.75,389">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="0,43"
               Start="0,0"
-              End="0,28.5">
+              End="0,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
